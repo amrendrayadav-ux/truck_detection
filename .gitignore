@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output files & directories
+resnet50_roi_inference/
+*.mp4
+*.avi
+*.mkv
+*_predictions_*.csv
+*_summary_*.json
+
+# Model directory allowlist
+!model/
+!model/*.pth
+
+# Environments & IDEs
+.env
+.venv
+env/
+venv/
+.idea/
+.vscode/
+*.swp

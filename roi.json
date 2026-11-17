@@ -1,0 +1,46 @@
+{
+  "description": "ResNet50 CCTV Truck ROI Classifier Configuration",
+  "model": {
+    "checkpoint": "best_validation_resnet50.pth",
+    "architecture": "resnet50",
+    "input_size": [224, 224],
+    "dropout_rate": 0.05,
+    "classes": [
+      "empty",
+      "full"
+    ],
+    "class_to_idx": {
+      "empty": 0,
+      "full": 1
+    },
+    "uncertainty_threshold": 0.70
+  },
+  "training_resolution": {
+    "width": 704,
+    "height": 576
+  },
+  "original_training_roi": {
+    "x1": 146,
+    "y1": 4,
+    "x2": 445,
+    "y2": 273,
+    "width": 299,
+    "height": 269
+  },
+  "inference_resolution": {
+    "width": 2560,
+    "height": 1440
+  },
+  "roi_scaling": {
+    "scale_x": 3.6363636363636362,
+    "scale_y": 2.5
+  },
+  "scaled_inference_roi": {
+    "x1": 531,
+    "y1": 10,
+    "x2": 1618,
+    "y2": 682,
+    "width": 1087,
+    "height": 672
+  }
+}
